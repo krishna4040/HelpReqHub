@@ -102,11 +102,10 @@ const Login = () => {
               <button className="w-full p-3 bg-green-400 text-white rounded-md">
                 Login
               </button>
-              <div className="flex items-center justify-between my-2">
-                <span className="w-full h-[1px] bg-slate-400"></span>
-                <span className="text-sm text-slate-400 font-light mx-2">or</span>
-                <span className="w-full h-[1px] bg-slate-400"></span>
-              </div>
+              <div className="flex items-center justify-center my-2">
+  <span className="text-sm text-slate-400 font-light mx-2">Do not have an account?</span>
+  <a href="/Signup" className="text-sm text-green-400 font-medium mx-2">Sign Up</a>
+  </div>
               <OAuth />
             </form>
           </>

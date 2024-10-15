@@ -150,11 +150,11 @@ const Signup = () => {
                   <button className="w-full p-3 bg-green-400 text-white rounded-md">
                     Signup
                   </button>
-                  <div className="flex items-center justify-between my-2">
-                    <span className="w-full h-[1px] bg-slate-400"></span>
-                    <span className="text-sm text-slate-400 font-light mx-2">or</span>
-                    <span className="w-full h-[1px] bg-slate-400"></span>
-                  </div>
+                  <div className="flex items-center justify-center my-2">
+  <span className="text-sm text-slate-400 font-light mx-2">Already have an account?</span>
+  <a href="/Login" className="text-sm text-green-400 font-medium mx-2">Login</a>
+</div>
+
                   <OAuth />
                 </form>
               </>
