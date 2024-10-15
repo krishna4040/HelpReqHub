@@ -1,7 +1,7 @@
 "use client";
 
 import { ReceiverForm } from "../ComponentExporter";
-
+import { setRole } from '@/components/Role/SelectRoleBtns'
 const CheckRole = () => {
   const currentRole = localStorage.getItem("userRole");
 
@@ -14,7 +14,7 @@ const CheckRole = () => {
             title="Change it in profile settings"
           >
             Please choose one of (Receiver or Supplier)
-            <span className="font-black text-cyan-900 uppercase text-2xl">
+            <span className="font-black text-green-400 uppercase text-2xl">
               in SELECT ROLE Tab
             </span>
           </h3>
@@ -26,8 +26,8 @@ const CheckRole = () => {
             title="Change it in profile settings"
           >
             You are currently a{" "}
-            <span className="font-black text-cyan-900 uppercase text-2xl">
-              {currentRole == "receiver" ? <>Receiver</> : <>Supplier</>}
+            <span className="font-black text-green-400 uppercase text-2xl">
+              {currentRole == "receiver" ? <>Supplier</> : <>Receiver</>}
             </span>
           </h3>
           {currentRole == "receiver" && (

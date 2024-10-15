@@ -77,7 +77,7 @@ const UserCard = () => {
         </>
       ) : requests.length === 0 ? (
         <>
-          <NotFound msg={"[!] No one asked for help"} />
+          <NotFound msg={"[!] No Listings"} />
         </>
       ) : (
         <>
