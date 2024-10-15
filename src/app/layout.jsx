@@ -1,8 +1,8 @@
 import "@/app/globals.css";
+import AuthContext from "@/components/Auth/Authcontext";
 import Footer from "@/components/footer";
 import Navbar from "@/components/Navbar";
 import { getServerSession } from "next-auth";
-import { SessionProvider } from "next-auth/react";
 import Script from "next/script";
 
 export const metadata = {
@@ -24,11 +24,11 @@ const RootLayout = async ({ children }) => {
           />
         </head>
         <body>
-          <SessionProvider session={session}>
+          <AuthContext session={session}>
             <Navbar />
             {children}
             <Footer />
-          </SessionProvider>
+          </AuthContext>
         </body>
       </html>
     </>
