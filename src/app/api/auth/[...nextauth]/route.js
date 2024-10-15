@@ -3,7 +3,7 @@ import InstagramProvider from "next-auth/providers/instagram";
 import FacebookProvider from "next-auth/providers/facebook";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { handleSignIn } from "@/lib/user/handleSignIn";
+import { handleAuth } from "@/lib/auth/handleAuth";
 
 export const authOptions = {
   providers: [
@@ -41,7 +41,7 @@ export const authOptions = {
       },
       async authorize(credentials, req) {
         try {
-          const res = await handleSignIn({
+          const res = await handleAuth({
             name: credentials.name,
             email: credentials.email,
             contact: credentials.contact,
@@ -72,7 +72,7 @@ export const authOptions = {
         account?.provider == "google" ||
         account?.provider == "facebook"
       ) {
-        const res = await handleSignIn({
+        const res = await handleAuth({
           name: user.name,
           email: user.email,
           contact: user.id,
