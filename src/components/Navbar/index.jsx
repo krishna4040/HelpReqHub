@@ -19,7 +19,7 @@ const Navbar = () => {
                     <li><Link href="/" className="hover:underline"><FaHome className="inline mr-1" /> Home </Link></li>
                     <li><Link href="/browse-goods" className="hover:underline"><FaSearch className="inline mr-1" /> Browse </Link></li>
                     <li>
-                        <Link href={isLoggedIn ? `/Dashboard/${user.user.name}` : "/register"} className="hover:underline">
+                        <Link href={isLoggedIn ? `/Dashboard/${user.user.name}` : "/Signup"} className="hover:underline">
                             <FaUserPlus className="inline mr-1" />
                             {isLoggedIn ? "Dashboard" : "Register"}
                         </Link>

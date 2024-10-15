@@ -4,7 +4,7 @@ import { HelpStats, Reviews, Stats } from "@/components/ComponentExporter";
 const Dashboard = ({ params }) => {
   return (
     <>
-      <section className="w-full lg:h-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-gray-200 via-zinc-400 to-slate-500 flex flex-col items-center">
+      <section className="w-full lg:h-screen min-h-screen overflow-x-hidden overflow-y-auto bg-white flex flex-col items-center">
         <div className="w-full flex flex-col md:flex-row justify-between items-center">
           <h1 className="font-black text-gray-900 text-5xl md:7xl lg:text-9xl p-3 m-2 flex flex-col items-start w-full">
             Dashboard

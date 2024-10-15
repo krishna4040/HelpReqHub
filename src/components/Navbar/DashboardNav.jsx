@@ -71,7 +71,7 @@ const DashboardNav = () => {
 
   return (
     <>
-      <nav className="bg-gray-800 border-gray-700">
+      <nav className="bg-green-500">
         {/* Mobile View */}
         <div className="lg:hidden w-full flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
@@ -150,7 +150,7 @@ const DashboardNav = () => {
               />
             )}
             <div className="mt-5 flex flex-col justify-evenly w-full">
-              <ul className="flex flex-col font-medium rounded-lg bg-gray-800 border-gray-700">
+              <ul className="flex flex-col font-medium rounded-lg bg-green-400">
                 {Links.map((link, index) => {
                   return (
                     <li key={index}>
