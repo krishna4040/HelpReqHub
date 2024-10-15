@@ -26,7 +26,7 @@ const RootLayout = async ({ children }) => {
         </head>
         <body>
           <AuthProvider session={session}>
-            <HomeNavigationBar />
+            {/* <HomeNavigationBar /> */}
             {children}
           </AuthProvider>
         </body>
