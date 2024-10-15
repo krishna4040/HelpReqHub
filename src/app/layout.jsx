@@ -1,14 +1,13 @@
 import "@/app/globals.css";
-import {
-  AuthProvider,
-  HomeNavigationBar,
-} from "@/components/ComponentExporter";
+import Footer from "@/components/footer";
+import Navbar from "@/components/Navbar";
 import { getServerSession } from "next-auth";
+import { SessionProvider } from "next-auth/react";
 import Script from "next/script";
 
 export const metadata = {
-  title: "HelpReqHub",
-  description: "An end-to-end helping system.",
+  title: "Recyclez",
+  description: "An end-to-end goods redistributing platform",
 };
 
 const RootLayout = async ({ children }) => {
@@ -25,10 +24,11 @@ const RootLayout = async ({ children }) => {
           />
         </head>
         <body>
-          <AuthProvider session={session}>
-            {/* <HomeNavigationBar /> */}
+          <SessionProvider session={session}>
+            <Navbar />
             {children}
-          </AuthProvider>
+            <Footer />
+          </SessionProvider>
         </body>
       </html>
     </>

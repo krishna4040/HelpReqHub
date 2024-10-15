@@ -8,9 +8,8 @@ import Navbar from '@/components/Navbar';
 const LandingPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-4">Welcome to EssentialConnect</h1>
+        <h1 className="text-4xl font-bold text-center mb-4">Welcome to Recyclez</h1>
         <p className="text-center text-xl mb-8">
           Connecting producers and consumers seamlessly with our smart matching and engaging gamification features.
         </p>
@@ -52,7 +51,6 @@ const LandingPage = () => {
             </div>
           ))}
         </div>
-        <Footer />
       </main>
     </div>
   );
