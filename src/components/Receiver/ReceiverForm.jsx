@@ -114,7 +114,7 @@ const ReceiverForm = () => {
               onChange={handleChange}
               placeholder={`"Food", "E-Waste", etc...`}
               required
-              className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             />
           </div>
           <div className="flex flex-col items-start w-full p-1">
@@ -133,7 +133,7 @@ const ReceiverForm = () => {
               onChange={handleChange}
               placeholder="Provide some description about what you need and other details regarding it."
               required
-              className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             ></textarea>
           </div>
           <div className="flex flex-col items-start w-full p-1">
@@ -151,7 +151,7 @@ const ReceiverForm = () => {
               onChange={handleChange}
               placeholder="Everytime, Weekends, DD-MM-YYYY"
               required
-              className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             />
           </div>
           <div className="flex flex-col items-start w-full p-1">
@@ -169,7 +169,7 @@ const ReceiverForm = () => {
               required
               accept="image/*"
               multiple={false}
-              className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             />
             {imageSrc && (
               <div className="flex flex-col items-center p-2">

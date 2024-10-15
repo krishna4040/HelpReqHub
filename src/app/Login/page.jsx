@@ -80,7 +80,7 @@ const Login = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                  className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                  className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                 value={formData?.email}
                 onChange={handleChange}
                 autoComplete="off"
@@ -91,7 +91,7 @@ const Login = () => {
               <input
                 type="password"
                 placeholder="Password"
-                  className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                  className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                 value={formData?.password}
                 onChange={handleChange}
                 autoComplete="off"

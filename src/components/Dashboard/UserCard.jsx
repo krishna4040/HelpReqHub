@@ -85,10 +85,10 @@ const UserCard = () => {
             {requests.map((request, index) => (
               <div
                 key={index}
-                className="max-w-[298px] flex flex-col items-center border rounded-lg shadow bg-gray-800 border-gray-700 m-2"
+                className="max-w-[298px] flex flex-col items-center border rounded-lg shadow   m-2"
               >
                 <img
-                  className="rounded-t-lg w-full max-w-xs h-auto md:max-w-xs border-b-2 border-solid border-gray-700 shadow-sm shadow-gray-600"
+                  className="rounded-t-lg w-full max-w-xs h-auto md:max-w-xs border-b-2 border-solid shadow-sm "
                   src={request.bgImg || "/default-help.webp"}
                   width={250}
                   height={250}
@@ -105,7 +105,7 @@ const UserCard = () => {
                       {request.title}
                     </h5>
                   </div>
-                  <p className="mb-3 font-normal text-gray-400 flex flex-col">
+                  <p className="mb-3 font-normal text-black flex flex-col">
                     <span>Name: {request.name}</span>
                     <span>Time: {request.time}</span>
                     <span>
@@ -115,7 +115,7 @@ const UserCard = () => {
                           Pending
                         </span>
                       ) : (
-                        <span className="capitalize text-green-600 font-black">
+                        <span className="capitalize text-black font-black">
                           Completed
                         </span>
                       )}
@@ -124,7 +124,7 @@ const UserCard = () => {
                   {currentRole == "supplier" && (
                     <button
                       disabled={loading}
-                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 disabled:bg-blue-300 disabled:cursor-wait focus:ring-blue-800"
+                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-green-400 hover:bg-green-500  disabled:cursor-wait "
                       onClick={() => {
                         getDetails(request.reqId);
                       }}

@@ -6,7 +6,7 @@ const Profile = ({ params }) => {
       <section className="w-full lg:h-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-b from-fuchsia-100 via-pink-300 to-rose-500 flex flex-col items-center">
         <h1 className="font-black text-fuchsia-900 text-6xl md:7xl lg:text-9xl p-3 m-2 flex flex-col items-start w-full">
           Profile
-          <span className="text-xs md:text-sm font-thin text-gray-700 mx-1">
+          <span className="text-xs md:text-sm font-thin text-green-700 mx-1">
             {params.id}
           </span>
         </h1>

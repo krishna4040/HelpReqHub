@@ -97,7 +97,7 @@ const Signup = () => {
                       autoComplete="off"
                       value={formData?.userName}
                       onChange={handleChange}
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       required
                     />
                     <input
@@ -108,14 +108,14 @@ const Signup = () => {
                       autoComplete="off"
                       value={formData?.contact}
                       onChange={handleChange}
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       required
                     />
                   </div>
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                    className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                     value={formData?.email}
                     onChange={handleChange}
                     autoComplete="off"
@@ -127,7 +127,7 @@ const Signup = () => {
                     <input
                       type="password"
                       placeholder="Password"
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       value={formData?.password}
                       onChange={handleChange}
                       autoComplete="off"
@@ -143,7 +143,7 @@ const Signup = () => {
                       value={formData?.confirmPassword}
                       onChange={handleChange}
                       placeholder="Confirm Password"
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       required
                     />
                   </div>

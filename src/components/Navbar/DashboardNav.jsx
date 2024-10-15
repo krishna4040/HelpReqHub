@@ -78,16 +78,16 @@ const DashboardNav = () => {
             href={"/"}
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
+            {/* <img
               src={"/logo.png"}
               width={30}
               height={30}
               className="w-8 h-auto rounded-sm"
               alt="Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+            /> */}
+            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
               HelpReqHub
-            </span>
+            </span> */}
           </Link>
           <HamburgerIconBtn
             clickEvent={() => {
@@ -96,7 +96,7 @@ const DashboardNav = () => {
           />
           {mobileNavIsOpen ? (
             <div className="w-full">
-              <ul className="flex flex-col font-medium mt-4 rounded-lg rtl:space-x-reverse bg-gray-800 border-gray-700">
+              <ul className="flex flex-col font-medium mt-4 rounded-lg rtl:space-x-reverse bg-green-500 border-green-300">
                 {Links.map((link, index) => {
                   return (
                     <li key={index}>
@@ -106,7 +106,7 @@ const DashboardNav = () => {
                           setMobileNavIsOpen((prev) => !prev);
                         }}
                       >
-                        <span className="w-full flex flex-row items-center py-2 px-3 rounded hover:bg-gray-700 text-white">
+                        <span className="w-full flex flex-row items-center py-2 px-3 rounded hover:bg-green-500 text-white">
                           <link.iconname className="text-white text-2xl font-black mx-1" />
                           {link.title}
                         </span>
@@ -117,7 +117,7 @@ const DashboardNav = () => {
                 <li>
                   <span
                     onClick={logoutHandler}
-                    className="w-full cursor-pointer py-2 px-3 rounded hover:bg-gray-700 text-white flex flex-row"
+                    className="w-full cursor-pointer py-2 px-3 rounded hover:bg-green-500 text-white flex flex-row"
                   >
                     <RiLogoutBoxFill className="text-white text-2xl font-black mx-1" />
                     Logout
@@ -162,7 +162,7 @@ const DashboardNav = () => {
                       >
                         <span
                           type="button"
-                          className="rounded hover:bg-gray-700 text-white p-2 mt-1 cursor-pointer flex flex-row items-center justify-between"
+                          className="rounded hover:bg-green-800 text-white p-2 mt-1 cursor-pointer flex flex-row items-center justify-between"
                         >
                           {navLinkVisibility && link.title}
                           <link.iconname className="text-white text-2xl font-black mx-1" />
@@ -175,7 +175,7 @@ const DashboardNav = () => {
                   <span
                     type="button"
                     onClick={logoutHandler}
-                    className="rounded hover:bg-gray-700 text-white p-2 mt-1 cursor-pointer flex flex-row items-center justify-between"
+                    className="rounded hover:bg-green-500 text-white p-2 mt-1 cursor-pointer flex flex-row items-center justify-between"
                   >
                     {navLinkVisibility && <>Logout</>}
                     <RiLogoutBoxFill className="text-white text-2xl font-black mx-1" />
@@ -186,7 +186,7 @@ const DashboardNav = () => {
           </div>
           <div className="w-full flex items-center flex-col">
             <Link href={"/"} className="flex flex-col items-center">
-              <img
+              {/* <img
                 src={"/logo.png"}
                 width={30}
                 height={30}
@@ -196,7 +196,7 @@ const DashboardNav = () => {
               />
               <span className="text-base font-semibold whitespace-nowrap text-white">
                 HelpReqHub
-              </span>
+              </span> */}
             </Link>
           </div>
         </div>

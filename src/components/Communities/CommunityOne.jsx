@@ -64,7 +64,7 @@ const CommunityOne = ({ name }) => {
             <div className="w-full flex flex-col items-start">
               <h2 className="font-black text-black text-3xl md:text-4xl lg:text-5xl p-3 m-2 flex flex-col items-start w-full uppercase">
                 {checksData?.name}
-                <span className="text-xs md:text-sm font-thin text-gray-700 mx-1 my-2 lowercase">
+                <span className="text-xs md:text-sm font-thin text-green-700 mx-1 my-2 lowercase">
                   {checksData?.desc}
                 </span>
               </h2>

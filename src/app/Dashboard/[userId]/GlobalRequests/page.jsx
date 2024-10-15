@@ -7,9 +7,9 @@ const GlobalRequests = () => {
     <>
       <section className="w-full lg:h-screen min-h-screen overflow-x-hidden overflow-y-auto bg-white flex flex-col items-center">
         <div className="w-full flex flex-col md:flex-row justify-between items-center">
-          <h1 className="font-black text-gray-900 text-3xl md:4xl lg:text-4xl p-3 m-2 flex flex-col items-start w-full">
+          <h1 className="font-black text-green-900 text-3xl md:4xl lg:text-4xl p-3 m-2 flex flex-col items-start w-full">
             Available Listings
-            <span className="text-xs md:text-sm font-thin text-gray-700 mx-1">
+            <span className="text-xs md:text-sm font-thin text-green-700 mx-1">
               List your products / Buy Products
             </span>
           </h1>

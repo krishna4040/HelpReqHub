@@ -105,7 +105,7 @@ const PendingRequestsCard = ({ comName, reload, updateState }) => {
               <div className="flex flex-row">
                 <button
                   type="button"
-                  className="p-2 rounded-lg bg-green-500 disabled:cursor-wait disabled:bg-green-300 text-white font-semibold text-base mx-1"
+                  className="p-2 rounded-lg  disabled:cursor-wait  text-white font-semibold text-base mx-1"
                   onClick={() => {
                     handlePendingRequests(member.id, "accept");
                   }}

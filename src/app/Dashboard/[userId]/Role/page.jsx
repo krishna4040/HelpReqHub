@@ -7,7 +7,7 @@ const Role = () => {
       <section className="w-full lg:h-screen min-h-screen overflow-x-hidden overflow-y-auto bg-white flex flex-col items-center">
         <h1 className="font-black text-black text-xl md:7xl lg:text-4xl p-3 m-2 flex flex-col items-start w-full">
           Select Your Role
-          <span className="text-xs md:text-sm font-thin text-gray-700 mx-1">
+          <span className="text-xs md:text-sm font-thin text-green-700 mx-1">
             Set up your role, get results based on your role.{" "}
             <span className="font-normal text-black">
               ( * for global requestors )

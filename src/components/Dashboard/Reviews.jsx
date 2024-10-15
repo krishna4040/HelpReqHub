@@ -41,7 +41,7 @@ const Reviews = () => {
         </>
       ) : (
         <div className="w-full my-2">
-          <h4 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-black bg-gray-400 px-3 py-1 rounded-full w-fit">
+          <h4 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-black bg-green-400 px-3 py-1 rounded-full w-fit">
             Your Reviews{" "}
             <span className="text-xl text-blue-600 font-extrabold">{`(`}</span>
             <span className="font-pacifico text-slate-700 text-sm mx-1">
