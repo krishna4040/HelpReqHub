@@ -80,7 +80,7 @@ const CommunityHelpRequestForm = ({ comName, updateState }) => {
       {!showForm ? (
         <>
           <div
-            className="flex flex-row items-center bg-green-500 gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
+            className="flex flex-row items-center  gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
             onClick={() => {
               setShowForm((prev) => !prev);
             }}
@@ -188,7 +188,7 @@ const CommunityHelpRequestForm = ({ comName, updateState }) => {
             <button
               type="submit"
               disabled={loading}
-              className="flex flex-row items-center bg-green-500 disabled:bg-green-300 disabled:cursor-wait gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
+              className="flex flex-row items-center  disabled:cursor-wait gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
             >
               <FaPenNib className="text-3xl" />
               <span className="text-xl font-black text-white">Request</span>

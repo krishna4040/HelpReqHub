@@ -15,7 +15,7 @@ const LandingPage = () => {
         </p>
 
         <div className="flex justify-center space-x-4 mb-12">
-          <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded">
+          <button className="bg-green-200 hover:bg-green-300 text-green-800 font-semibold py-2 px-4 rounded">
             Browse Items
           </button>
           <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
@@ -44,7 +44,7 @@ const LandingPage = () => {
               author: "User Mike"
             }
           ].map((testimonial, index) => (
-            <div key={index} className="bg-gray-100 rounded-lg p-6 flex flex-col items-center">
+            <div key={index} className="bg-green-100 rounded-lg p-6 flex flex-col items-center">
               <img src={testimonial.image} alt={testimonial.alt} className="w-full h-48 object-cover rounded-lg mb-4" />
               <p className="text-center italic mb-2">{testimonial.quote}</p>
               <p className="font-semibold">- {testimonial.author}</p>

@@ -85,13 +85,13 @@ const ReceiverForm = () => {
       {!showForm ? (
         <>
           <div
-            className="flex flex-row items-center bg-blue-500 gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
+            className="flex flex-row items-center bg-green-500 gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
             onClick={() => {
               setShowForm((prev) => !prev);
             }}
           >
             <FaPenNib className="text-3xl" />
-            <span className="text-xl font-black text-white">Request</span>
+            <span className="font-black text-white">Upload Listing</span>
           </div>
         </>
       ) : (
@@ -114,7 +114,7 @@ const ReceiverForm = () => {
               onChange={handleChange}
               placeholder={`"Food", "E-Waste", etc...`}
               required
-              className="outline-none max-w-md text-white font-medium text-base px-3 py-2 mx-2 w-full mb-3 mt-1 bg-slate-800"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             />
           </div>
           <div className="flex flex-col items-start w-full p-1">
@@ -133,7 +133,7 @@ const ReceiverForm = () => {
               onChange={handleChange}
               placeholder="Provide some description about what you need and other details regarding it."
               required
-              className="outline-none max-w-md max-h-96 text-white font-medium text-base px-3 py-2 mx-2 w-full mb-3 mt-1 bg-slate-800"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             ></textarea>
           </div>
           <div className="flex flex-col items-start w-full p-1">
@@ -151,7 +151,7 @@ const ReceiverForm = () => {
               onChange={handleChange}
               placeholder="Everytime, Weekends, DD-MM-YYYY"
               required
-              className="outline-none max-w-md text-white font-medium text-base px-3 py-2 mx-2 w-full mb-3 mt-1 bg-slate-800"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             />
           </div>
           <div className="flex flex-col items-start w-full p-1">
@@ -169,7 +169,7 @@ const ReceiverForm = () => {
               required
               accept="image/*"
               multiple={false}
-              className="outline-none max-w-md text-white font-medium text-base px-3 py-2 mx-2 w-full mb-3 mt-1 bg-slate-800"
+              className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
             />
             {imageSrc && (
               <div className="flex flex-col items-center p-2">
@@ -193,10 +193,10 @@ const ReceiverForm = () => {
             <button
               type="submit"
               disabled={loading || uploading}
-              className="flex flex-row items-center bg-blue-500 disabled:cursor-wait disabled:bg-blue-300 gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
+              className="flex flex-row items-center bg-green-500 disabled:cursor-wait disabled:bg-blue-300 gap-2 m-1 p-2 rounded-md cursor-pointer text-white"
             >
               <FaPenNib className="text-3xl" />
-              <span className="text-xl font-black text-white">Request</span>
+              <span className="text-xl font-black text-white">Upload Listing</span>
             </button>
           </div>
         </form>

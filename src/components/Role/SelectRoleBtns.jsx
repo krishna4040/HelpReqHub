@@ -11,22 +11,22 @@ const SelectRoleBtns = () => {
   return (
     <>
       <div
-        className="cursor-pointer bg-black text-white p-3 m-2 flex flex-col items-center justify-between rounded-md hover:bg-gray-700 w-full sm:w-1/2 min-w-fit"
-        onClick={() => {
-          setRole("receiver");
-        }}
-      >
-        <CiBag1 className="text-9xl font-black" />
-        <span className="text-5xl font-bold m-2">Requester</span>
-      </div>
-      <div
-        className="cursor-pointer bg-black text-white p-3 m-2 flex flex-col items-center justify-between rounded-md hover:bg-gray-700 w-full sm:w-1/2 min-w-fit"
+        className="cursor-pointer bg-green-500 text-white p-3 m-2 flex flex-col items-center justify-between rounded-md hover:bg-green-600 w-full sm:w-1/2 min-w-fit"
         onClick={() => {
           setRole("supplier");
         }}
       >
+        <CiBag1 className="text-9xl font-black" />
+        <span className="text-5xl font-bold m-2">Supplier</span>
+      </div>
+      <div
+        className="cursor-pointer bg-green-500 text-white p-3 m-2 flex flex-col items-center justify-between rounded-md hover:bg-green-600 w-full sm:w-1/2 min-w-fit"
+        onClick={() => {
+          setRole("receiver");
+        }}
+      >
         <CiBoxes className="text-9xl font-black" />
-        <span className="text-5xl font-bold m-2">Helper</span>
+        <span className="text-5xl font-bold m-2">Reciever</span>
       </div>
     </>
   );

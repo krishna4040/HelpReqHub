@@ -54,7 +54,7 @@ const FeedbackForm = () => {
         <div className="mb-4">
           <label
             htmlFor="name"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-green-700 font-semibold mb-2"
           >
             Name
           </label>
@@ -65,14 +65,14 @@ const FeedbackForm = () => {
             value={feedback.name}
             onChange={handleChange}
             placeholder="Your Name"
-            className="w-full text-black focus:ring focus:ring-blue-600 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            className="w-full text-black focus:ring focus:ring-blue-600 px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:border-blue-500"
             required
           />
         </div>
         <div className="mb-4">
           <label
             htmlFor="email"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-green-700 font-semibold mb-2"
           >
             Email
           </label>
@@ -83,14 +83,14 @@ const FeedbackForm = () => {
             value={feedback.email}
             onChange={handleChange}
             placeholder="Your Email"
-            className="w-full text-black focus:ring focus:ring-blue-600 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            className="w-full text-black focus:ring focus:ring-blue-600 px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:border-blue-500"
             required
           />
         </div>
         <div className="mb-4">
           <label
             htmlFor="data"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-green-700 font-semibold mb-2"
           >
             Message
           </label>
@@ -101,7 +101,7 @@ const FeedbackForm = () => {
             onChange={handleChange}
             placeholder="Your Message"
             rows="4"
-            className="w-full text-black focus:ring focus:ring-blue-600 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            className="w-full text-black focus:ring focus:ring-blue-600 px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:border-blue-500"
             required
           />
         </div>

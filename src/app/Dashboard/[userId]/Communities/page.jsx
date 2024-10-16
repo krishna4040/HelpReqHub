@@ -10,7 +10,7 @@ const Communities = () => {
       <section className="w-full lg:h-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-b from-purple-200 via-purple-300 to-purple-500 flex flex-col items-center">
         <h1 className="font-black text-purple-900 text-6xl md:text-7xl lg:text-9xl p-3 m-2 flex flex-col items-start w-full">
           Community
-          <span className="text-xs md:text-sm font-thin text-gray-700 mx-1">
+          <span className="text-xs md:text-sm font-thin text-green-700 mx-1">
             find/join/create <span className="text-black font-black">NEW</span>{" "}
             communities.
           </span>

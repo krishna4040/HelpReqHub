@@ -5,7 +5,7 @@ const Hamburger = ({ clickEvent }) => {
     <>
       <button
         type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-green-700 dark:focus:ring-green-600"
         onClick={() => {
           clickEvent();
         }}

@@ -97,7 +97,7 @@ const Signup = () => {
                       autoComplete="off"
                       value={formData?.userName}
                       onChange={handleChange}
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       required
                     />
                     <input
@@ -108,14 +108,14 @@ const Signup = () => {
                       autoComplete="off"
                       value={formData?.contact}
                       onChange={handleChange}
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       required
                     />
                   </div>
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                    className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                     value={formData?.email}
                     onChange={handleChange}
                     autoComplete="off"
@@ -127,7 +127,7 @@ const Signup = () => {
                     <input
                       type="password"
                       placeholder="Password"
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       value={formData?.password}
                       onChange={handleChange}
                       autoComplete="off"
@@ -143,18 +143,18 @@ const Signup = () => {
                       value={formData?.confirmPassword}
                       onChange={handleChange}
                       placeholder="Confirm Password"
-                      className="w-full p-3 border border-gray-300 rounded-md text-black focus:outline-none"
+                      className="w-full p-3 border border-green-300 rounded-md text-black focus:outline-none"
                       required
                     />
                   </div>
                   <button className="w-full p-3 bg-green-400 text-white rounded-md">
                     Signup
                   </button>
-                  <div className="flex items-center justify-between my-2">
-                    <span className="w-full h-[1px] bg-slate-400"></span>
-                    <span className="text-sm text-slate-400 font-light mx-2">or</span>
-                    <span className="w-full h-[1px] bg-slate-400"></span>
-                  </div>
+                  <div className="flex items-center justify-center my-2">
+  <span className="text-sm text-slate-400 font-light mx-2">Already have an account?</span>
+  <a href="/Login" className="text-sm text-green-400 font-medium mx-2">Login</a>
+</div>
+
                   <OAuth />
                 </form>
               </>

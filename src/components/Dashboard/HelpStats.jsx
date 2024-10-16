@@ -43,7 +43,7 @@ const HelpStats = () => {
         </>
       ) : (
         <div className="w-full mt-3">
-          <h4 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-black bg-gray-400 px-3 py-1 rounded-full w-fit">
+          <h4 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-black bg-green-400 px-3 py-1 rounded-full w-fit">
             [Your Helps] Stats{" "}
             <span className="text-xl text-blue-600 font-extrabold">{`(`}</span>
             <span className="font-pacifico text-slate-700 text-sm mx-1">
@@ -56,8 +56,8 @@ const HelpStats = () => {
           </p>
           <div className="mt-3 md:m-4">
             <div className="relative overflow-x-auto">
-              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <table className="w-full text-sm text-left rtl:text-right text-green-500 dark:text-green-400">
+                <thead className="text-xs text-green-700 uppercase bg-green-50 dark:bg-green-700 dark:text-green-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">
                       Requested At
@@ -87,11 +87,11 @@ const HelpStats = () => {
                   {stats.map((stat, index) => (
                     <tr
                       key={index}
-                      className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                      className="bg-white border-b dark:bg-green-800 dark:border-green-700"
                     >
                       <th
                         scope="row"
-                        className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        className="px-6 py-4 font-medium text-green-900 whitespace-nowrap dark:text-white"
                       >
                         {getLocaleTime(stat.createdAt)}
                       </th>
