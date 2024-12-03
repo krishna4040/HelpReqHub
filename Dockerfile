@@ -1,15 +1,8 @@
-FROM node:20.9.0
-
+FROM node:lts-slim
 WORKDIR /app
-
 COPY package*.json .
-
 COPY . .
-
-RUN npm install
-
+RUN npm install --unsafe-perm
 EXPOSE 3000
-
 RUN npm run build
-
-CMD [ "npm", "run", "start" ]
+CMD ["npm", "run", "start"]
