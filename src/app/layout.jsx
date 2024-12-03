@@ -23,10 +23,10 @@ const RootLayout = async ({ children }) => {
             src={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.GOOGLE_MAP_API_KEY}`}
           />
         </head>
-        <body>
+        <body className="h-screen flex flex-col w-full">
           <AuthContext session={session}>
             <Navbar />
-            {children}
+            <main className="flex-grow">{children}</main>
             <Footer />
           </AuthContext>
         </body>
