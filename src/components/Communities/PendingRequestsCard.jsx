@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Loading, NotFound } from "../ComponentExporter";
+import Image from "next/image";
 
 const PendingRequestsCard = ({ comName, reload, updateState }) => {
   const [loading, setLoading] = useState(false);
@@ -68,7 +69,7 @@ const PendingRequestsCard = ({ comName, reload, updateState }) => {
         members.map((member, i) => (
           <div key={i} className="flex flex-col items-center">
             <div className="flex flex-col items-start bg-white rounded-lg p-2 m-1">
-              <img
+              <Image
                 src={member.image}
                 alt="/"
                 className="w-11 h-11 rounded-full border-2 border-solid border-white"

@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 const NotFound = ({ msg }) => {
   return (
     <>
       <div className="p-1 flex flex-col items-center w-full">
-        <img
+        <Image
           src={"/not-found.png"}
           alt="/"
           className="w-32 h-32 m-1 rounded-full border-8 border-solid border-black p-1"

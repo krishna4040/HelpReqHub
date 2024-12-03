@@ -30,7 +30,7 @@ const Role = () => {
             <h3 className="font-bold text-slate-600 text-xl">Who is Reciever?</h3>
             <p className="w-fit text-black text-left font-thin">
             
-            A Consumer is someone seeking essentials such as food, clothing, or furniture. Consumers can browse the available items on our platform and request what they need—free or at minimal cost. By choosing to reuse instead of buying new, consumers help reduce waste and foster a circular economy. If you're in need of essential items, explore the listings and find what you’re looking for!
+            A Consumer is someone seeking essentials such as food, clothing, or furniture. Consumers can browse the available items on our platform and request what they need—free or at minimal cost. By choosing to reuse instead of buying new, consumers help reduce waste and foster a circular economy. If you are in need of essential items, explore the listings and find what you’re looking for!
 
             </p>
           </div>

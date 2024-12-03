@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Loading, NotFound } from "../ComponentExporter";
 import { getLocaleTime } from "../ConvertTime";
+import Image from "next/image";
 
 const HelpWantedCard = ({ comName, states = [] }) => {
   const [requests, setRequests] = useState([]);
@@ -49,7 +50,7 @@ const HelpWantedCard = ({ comName, states = [] }) => {
           >
             <div className="flex flex-col sm:flex-row items-start w-full justify-between">
               <div className="flex flex-row items-center">
-                <img
+                <Image
                   src={request.image}
                   alt="/"
                   className="w-11 h-11 rounded-full border-2 border-solid border-white"
@@ -95,10 +96,10 @@ const HelpWantedCard = ({ comName, states = [] }) => {
                 Images
               </span>
             </h4>
-            <img
+            <Image
               src={request.help_image}
               className="w-full h-60 aspect-video bg-black p-1 border-2 my-1 rounded-lg overflow-hidden"
-            ></img>
+            />
           </div>
         ))
       )}

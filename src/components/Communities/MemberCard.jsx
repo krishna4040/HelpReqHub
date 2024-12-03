@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Loading, NotFound } from "../ComponentExporter";
+import Image from "next/image";
 
 const MemberCard = ({ comName, states = [] }) => {
   const [loading, setLoading] = useState(false);
@@ -58,7 +59,7 @@ const MemberCard = ({ comName, states = [] }) => {
             className="flex flex-col items-start bg-white rounded-lg p-2 m-1"
           >
             <div className="flex flex-row items-center justify-between w-full">
-              <img
+              <Image
                 src={member.image}
                 alt="/"
                 className="w-11 h-11 shadow-md rounded-full border-2 border-solid border-white"

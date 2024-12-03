@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useSession } from "next-auth/react";
 import { Loading, NotFound } from "../ComponentExporter";
+import Image from "next/image";
 
 const Reviews = () => {
   const { data: session, status } = useSession();
@@ -60,7 +61,7 @@ const Reviews = () => {
               >
                 <div className="flex flex-row items-center justify-between w-full">
                   <div className="flex flex-row items-center justify-start">
-                    <img
+                    <Image
                       src={review.image}
                       alt="/"
                       className="w-12 h-12 rounded-full m-1 shadow-md"

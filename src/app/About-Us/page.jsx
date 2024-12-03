@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import FeedbackForm from "../../components/Feedback/Feedback";
 import {
   FaInstagramSquare,
@@ -27,7 +28,7 @@ const AboutUs = () => {
             This page will tell you about us and this project.
           </span>
         </h1>
-        <img
+        <Image
           src={"/about-top.jpg"}
           alt="about mast image"
           width={250}

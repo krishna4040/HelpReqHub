@@ -6,6 +6,7 @@ import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { FaUpload } from "react-icons/fa";
 import { uploadUserProfileImagesToFirebaseStorage } from "@/lib/_firebase/_firebase_storage.js";
+import Image from "next/image";
 
 const ProfileForm = () => {
   const { data: session, status } = useSession();
@@ -145,7 +146,7 @@ const ProfileForm = () => {
               onChange={handleProfileImageChange}
             />
             <div className="flex flex-col items-start">
-              <img
+              <Image
                 src={
                   profileImage
                     ? URL.createObjectURL(profileImage)

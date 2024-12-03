@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaPenNib } from "react-icons/fa";
 import axios from "axios";
 import { uploadUserProfileImagesToFirebaseStorage } from "@/lib/_firebase/_firebase_storage";
+import Image from "next/image";
 
 const CommunityHelpRequestForm = ({ comName, updateState }) => {
   const [showForm, setShowForm] = useState(false);
@@ -167,7 +168,7 @@ const CommunityHelpRequestForm = ({ comName, updateState }) => {
               />
               {imageSrc && (
                 <div className="flex flex-col items-center p-2">
-                  <img
+                  <Image
                     src={URL.createObjectURL(imageSrc)}
                     alt="/"
                     className="max-w-sm h-auto aspect-video my-2 rounded-md shadow-md border-2 border-solid border-zinc-600 ml-2"

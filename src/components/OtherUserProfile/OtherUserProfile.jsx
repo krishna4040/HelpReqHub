@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Loading, NotFound } from "../ComponentExporter";
 import ReviewUserForm from "./ReviewUserForm";
+import Image from "next/image";
 
 const OtherUserProfile = ({ userId }) => {
   const [userDetails, setUserDetails] = useState();
@@ -42,7 +43,7 @@ const OtherUserProfile = ({ userId }) => {
       ) : (
         <>
           <div className="flex flex-col items-start gap-1">
-            <img
+            <Image
               src={userDetails.image}
               alt="/"
               className="w-32 h-32 rounded-full border-4 border-solid border-white m-1 p-1"

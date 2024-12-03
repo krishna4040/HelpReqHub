@@ -46,7 +46,7 @@ const HomeNav = () => {
               >
                 Dashboard
               </button>
-              <img
+              <Image
                 src={session?.user?.image}
                 alt="/"
                 width={40}

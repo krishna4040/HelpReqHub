@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Loading, NotFound } from "../ComponentExporter";
 import { getLocaleTime } from "../ConvertTime";
+import Image from "next/image";
 
 const UserCard = () => {
   const [requests, setRequests] = useState([]);
@@ -87,7 +88,7 @@ const UserCard = () => {
                 key={index}
                 className="max-w-[298px] flex flex-col items-center border rounded-lg shadow   m-2"
               >
-                <img
+                <Image
                   className="rounded-t-lg w-full max-w-xs h-auto md:max-w-xs border-b-2 border-solid shadow-sm "
                   src={request.bgImg || "/default-help.webp"}
                   width={250}
@@ -96,7 +97,7 @@ const UserCard = () => {
                 />
                 <div className="p-5 w-full flex flex-col items-start">
                   <div className="text-white flex flex-row items-start gap-1">
-                    <img
+                    <Image
                       src={request.image}
                       alt="/"
                       className="w-11 h-11 m-1 rounded-full border-2 border-solid border-white"

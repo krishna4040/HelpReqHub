@@ -4,6 +4,7 @@ import hero2 from "@/assets/hero2.png"
 import hero3 from "@/assets/hero3.png"
 import Footer from '@/components/footer';
 import Navbar from '@/components/Navbar';
+import Image from 'next/image';
 
 const LandingPage = () => {
   return (
@@ -45,7 +46,7 @@ const LandingPage = () => {
             }
           ].map((testimonial, index) => (
             <div key={index} className="bg-green-100 rounded-lg p-6 flex flex-col items-center">
-              <img src={testimonial.image} alt={testimonial.alt} className="w-full h-48 object-cover rounded-lg mb-4" />
+              <Image src={testimonial.image} alt={testimonial.alt} className="w-full h-48 object-cover rounded-lg mb-4" />
               <p className="text-center italic mb-2">{testimonial.quote}</p>
               <p className="font-semibold">- {testimonial.author}</p>
             </div>

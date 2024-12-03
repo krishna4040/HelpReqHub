@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Loading, NotFound, NewCommunityForm } from "../ComponentExporter";
+import Image from "next/image";
 
 const CommunityCard = () => {
   const { data: session, status } = useSession();
@@ -56,7 +57,7 @@ const CommunityCard = () => {
                     key={index}
                   >
                     <div className="w-full max-w-md h-auto rounded-lg overflow-hidden border-2 border-solid border-black bg-white cursor-pointer">
-                      <img
+                      <Image
                         src={`${community.com_image}`}
                         alt="/"
                         draggable={false}

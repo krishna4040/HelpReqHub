@@ -5,6 +5,7 @@ import { FaPenNib } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import axios from "axios";
 import { uploadUserProfileImagesToFirebaseStorage } from "@/lib/_firebase/_firebase_storage";
+import Image from "next/image";
 
 
 const NewCommunityForm = (props) => {
@@ -172,7 +173,7 @@ const NewCommunityForm = (props) => {
             />
             {imageSrc && (
               <div className="flex flex-col items-center p-2">
-                <img
+                <Image
                   src={URL.createObjectURL(imageSrc)}
                   alt="/"
                   className="max-w-sm h-auto aspect-video my-2 rounded-md shadow-md border-2 border-solid border-zinc-600 ml-2"
