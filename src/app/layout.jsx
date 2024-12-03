@@ -1,5 +1,5 @@
 import "@/app/globals.css";
-import AuthContext from "@/components/Auth/Authcontext";
+import AuthContext from "@/components/Auth/AuthContext";
 import Footer from "@/components/footer";
 import Navbar from "@/components/Navbar";
 import { getServerSession } from "next-auth";
