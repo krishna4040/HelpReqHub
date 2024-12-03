@@ -9,22 +9,16 @@ const DashboardLayout = ({ children }) => {
   const { data: session, status } = useSession();
 
   return (
-    <section>
+    <section className="h-screen flex">
       {status === "loading" ? (
-        <>
-          <Wait />
-        </>
+        <Wait />
       ) : status === "authenticated" ? (
-        <>
-          <div className="flex lg:flex-row flex-col lg:items-center">
-            <DashboardNav />
-            {children}
-          </div>
-        </>
+        <div className="flex flex-grow lg:flex-row flex-col lg:items-center w-full">
+          <DashboardNav />
+          <main className="flex-grow">{children}</main>
+        </div>
       ) : (
-        <>
-          <NotFound />
-        </>
+        <NotFound />
       )}
     </section>
   );
